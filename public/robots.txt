@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /ayurvedalya
+Allow: /gallery
+Allow: /testimonials
+Allow: /contact
+Disallow: /404
+
+Sitemap: https://example.com/sitemap.xml
