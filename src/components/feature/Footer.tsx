@@ -41,17 +41,33 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {[
-                { icon: 'ri-facebook-fill', href: '#' },
-                { icon: 'ri-instagram-line', href: '#' },
-                { icon: 'ri-twitter-x-line', href: '#' },
-                { icon: 'ri-youtube-line', href: '#' },
-                { icon: 'ri-whatsapp-line', href: WHATSAPP_BOOK_URL },
+                {
+                  icon: 'ri-instagram-line',
+                  href: 'https://www.instagram.com/dr.yogeshtl?utm_source=qr&igsh=MTJvM2s2eXZja2JrYg==',
+                  label: 'Instagram',
+                },
+                {
+                  icon: 'ri-facebook-fill',
+                  href: 'https://www.facebook.com/share/1AegdPVqpx/',
+                  label: 'Facebook',
+                },
+                {
+                  icon: 'ri-threads-line',
+                  href: 'https://www.threads.com/@dr.yogeshtl?utm_source=wa4a&utm_campaign=wa_th_web_link_ts_ni',
+                  label: 'Threads',
+                },
+                {
+                  icon: 'ri-whatsapp-line',
+                  href: WHATSAPP_BOOK_URL,
+                  label: 'WhatsApp',
+                },
               ].map((s) => (
                 <a
                   key={s.icon}
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  aria-label={s.label}
                   className="w-9 h-9 flex items-center justify-center rounded-full bg-[#6B5210] hover:bg-[#F4A300] transition-colors duration-200 cursor-pointer"
                 >
                   <i className={`${s.icon} text-base`} />
