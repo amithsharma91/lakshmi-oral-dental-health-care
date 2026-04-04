@@ -8,7 +8,7 @@ import VideoTestimonials from './components/VideoTestimonials';
 import GoogleReviewsCTA from './components/GoogleReviewsCTA';
 import TestimonialsCTA from './components/TestimonialsCTA';
 
-const siteUrl = import.meta.env.VITE_SITE_URL || '';
+const siteUrl = import.meta.env.VITE_SITE_URL || 'https://lakshmioraldental.in';
 
 const aggregateRatingSchema = {
   '@context': 'https://schema.org',
