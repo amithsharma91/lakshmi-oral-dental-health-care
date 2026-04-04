@@ -12,7 +12,7 @@ import CTABanner from './components/CTABanner';
 import ContactStrip from './components/ContactStrip';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
-const siteUrl = import.meta.env.VITE_SITE_URL || '';
+const siteUrl = import.meta.env.VITE_SITE_URL || 'https://lakshmioraldental.in';
 
 const serviceAreaNeighbourhoods = [
   { '@type': 'City', name: 'Sanjaynagar', containedInPlace: { '@type': 'City', name: 'Bangalore' } },
