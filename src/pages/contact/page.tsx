@@ -8,7 +8,7 @@ import QuickActions from './components/QuickActions';
 import ContactFAQ from './components/ContactFAQ';
 import { WHATSAPP_BOOK_URL } from '../../mocks/dental';
 
-const siteUrl = import.meta.env.VITE_SITE_URL || '';
+const siteUrl = import.meta.env.VITE_SITE_URL || 'https://lakshmioraldental.in';
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
