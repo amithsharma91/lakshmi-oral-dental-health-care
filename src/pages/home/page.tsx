@@ -176,11 +176,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen font-body">
-      <title>Sanjaynagar Dental Clinic Bangalore | Lakshmi Oral &amp; Dental Health Care</title>
+      <title>Lakshmi Dental Sanjaynagar | Best Dentist Bangalore</title>
       <meta name="description" content="Lakshmi Oral &amp; Dental Health Care, Sanjaynagar Bangalore — Where Beautiful Smiles Begin. Expert dental care: implants, orthodontics, root canal, cosmetic dentistry &amp; more. Open all 7 days since 2002." />
-      <meta name="keywords" content="dental clinic bangalore, dental care sanjaynagar, teeth whitening bangalore, best dentist sanjaynagar bangalore" />
+      <meta name="keywords" content="dental clinic bangalore, dental care sanjaynagar, teeth whitening bangalore, best dentist sanjaynagar" />
       <link rel="canonical" href={`${siteUrl}/`} />
-      <meta property="og:title" content="Sanjaynagar Dental Clinic Bangalore | Lakshmi Oral &amp; Dental Health Care" />
+      <meta property="og:title" content="Best Dental Clinic in Sanjaynagar Bangalore | Lakshmi Oral &amp; Dental Health Care" />
       <meta property="og:description" content="Where Beautiful Smiles Begin. Expert dental care in Sanjaynagar, Bangalore — implants, orthodontics, root canal &amp; more. Open 7 days since 2002." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={`${siteUrl}/`} />
@@ -188,7 +188,7 @@ export default function Home() {
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Sanjaynagar Dental Clinic Bangalore | Lakshmi Oral &amp; Dental Health Care" />
+      <meta name="twitter:title" content="Best Dental Clinic in Sanjaynagar Bangalore | Lakshmi Oral &amp; Dental Health Care" />
       <meta name="twitter:description" content="Where Beautiful Smiles Begin. Trusted dental clinic in Sanjaynagar, Bangalore. Open 7 days." />
       <meta name="twitter:image" content="https://storage.readdy-site.link/project_files/c4893f46-78a8-468c-a94c-da841665c127/8634b388-87ae-4d0a-8224-be217f2c522f_20260314_181251.jpg?v=18c4970506bdd6690915aa827f801f74" />
       <script type="application/ld+json">{JSON.stringify(dentistSchema)}</script>
