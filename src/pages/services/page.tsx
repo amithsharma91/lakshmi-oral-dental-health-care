@@ -8,7 +8,7 @@ import WhyOurServices from './components/WhyOurServices';
 import ServicesCTA from './components/ServicesCTA';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
-const siteUrl = import.meta.env.VITE_SITE_URL || '';
+const siteUrl = import.meta.env.VITE_SITE_URL || 'https://lakshmioraldental.in';
 
 const servicesItemListSchema = {
   '@context': 'https://schema.org',
