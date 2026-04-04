@@ -60,7 +60,7 @@ export default function Services() {
 
   return (
     <div className="min-h-screen font-body">
-      <title>Dental Services Bangalore | Implants, Orthodontics, Root Canal | Lakshmi Dental</title>
+      <title>Dental Services Bangalore | Implants &amp; Root Canal</title>
       <meta name="description" content="Comprehensive dental services in Sanjaynagar, Bangalore — general dentistry, cosmetic dentistry, dental implants, root canal, orthodontics &amp; braces, oral surgery and more. Open 7 days." />
       <meta name="keywords" content="dental services bangalore, dental implants sanjaynagar, orthodontics bangalore, root canal treatment bangalore, cosmetic dentistry bangalore" />
       <link rel="canonical" href={`${siteUrl}/services`} />
