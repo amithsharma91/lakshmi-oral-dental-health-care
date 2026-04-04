@@ -48,7 +48,7 @@ export default function About() {
 
   return (
     <div className="min-h-screen font-body">
-      <title>About Dr. Yogesh T.L. | Expert Dentist Sanjaynagar Bangalore | Lakshmi Dental</title>
+      <title>Dr. Yogesh T.L. | Dentist Sanjaynagar Bangalore</title>
       <meta name="description" content="Meet Dr. Yogesh T.L., expert dentist with over 24 years of experience at Lakshmi Oral &amp; Dental Health Care, Sanjaynagar, Bangalore. Trusted dental specialist since 2002." />
       <meta name="keywords" content="Dr Yogesh dentist bangalore, dental specialist sanjaynagar bangalore, experienced dentist bangalore, about lakshmi dental" />
       <link rel="canonical" href={`${siteUrl}/about`} />
