@@ -10,7 +10,7 @@ import SwarnabinduSection from './components/SwarnabinduSection';
 import AyurvedaContact from './components/AyurvedaContact';
 import AyurvedaCTA from './components/AyurvedaCTA';
 
-const siteUrl = import.meta.env.VITE_SITE_URL || '';
+const siteUrl = import.meta.env.VITE_SITE_URL || 'https://lakshmioraldental.in';
 
 const ayurvedaClinicSchema = {
   '@context': 'https://schema.org',
