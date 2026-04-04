@@ -67,7 +67,7 @@ const breadcrumbSchema = {
 export default function Testimonials() {
   return (
     <div className="min-h-screen font-body">
-      <title>Patient Reviews &amp; Testimonials | Lakshmi Oral &amp; Dental Health Care Bangalore</title>
+      <title>Patient Reviews | Lakshmi Dental Sanjaynagar</title>
       <meta name="description" content="Read real patient reviews for Lakshmi Oral &amp; Dental Health Care, Sanjaynagar, Bangalore. Verified Google reviews and video testimonials from happy dental patients. Rated 5 stars." />
       <meta name="keywords" content="dental clinic reviews bangalore, patient testimonials dentist sanjaynagar, best dentist reviews bangalore, google reviews dental bangalore" />
       <link rel="canonical" href={`${siteUrl}/testimonials`} />
