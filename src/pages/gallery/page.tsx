@@ -6,7 +6,7 @@ import PhotoGrid from './components/PhotoGrid';
 import VideoGallery from './components/VideoGallery';
 import GalleryCTA from './components/GalleryCTA';
 
-const siteUrl = import.meta.env.VITE_SITE_URL || '';
+const siteUrl = import.meta.env.VITE_SITE_URL || 'https://lakshmioraldental.in';
 
 const imageGallerySchema = {
   '@context': 'https://schema.org',
