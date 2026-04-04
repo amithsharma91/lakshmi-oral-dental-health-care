@@ -33,7 +33,7 @@ const breadcrumbSchema = {
 export default function Gallery() {
   return (
     <div className="min-h-screen font-body">
-      <title>Dental Clinic Gallery | Before &amp; After Photos | Lakshmi Oral &amp; Dental Bangalore</title>
+      <title>Dental Gallery | Before &amp; After | Lakshmi Bangalore</title>
       <meta name="description" content="Explore our dental clinic gallery — before &amp; after dental treatment photos, clinic interior, team photos and smile transformations at Lakshmi Oral &amp; Dental Health Care, Sanjaynagar, Bangalore." />
       <meta name="keywords" content="dental clinic photos bangalore, dental before after sanjaynagar, smile transformation bangalore, dental clinic interior bangalore" />
       <link rel="canonical" href={`${siteUrl}/gallery`} />
