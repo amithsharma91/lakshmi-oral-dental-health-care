@@ -104,7 +104,7 @@ const breadcrumbSchema = {
 export default function Contact() {
   return (
     <div className="min-h-screen font-body">
-      <title>Contact &amp; Book Appointment | Lakshmi Oral &amp; Dental Health Care Sanjaynagar Bangalore</title>
+      <title>Book Dental Appointment | Lakshmi Dental Bangalore</title>
       <meta name="description" content="Book a dental appointment at Lakshmi Oral &amp; Dental Health Care, #83/A 5th Main, AECS Layout, Sanjaynagar, Bangalore. Call +91 94481 78793. Open all 7 days — morning &amp; evening." />
       <meta name="keywords" content="book dental appointment bangalore, dental clinic sanjaynagar contact, dentist near sanjaynagar bangalore, dental clinic timing bangalore" />
       <link rel="canonical" href={`${siteUrl}/contact`} />
