@@ -10,7 +10,7 @@ import JourneyTimeline from './components/JourneyTimeline';
 import AboutCTA from './components/AboutCTA';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
-const siteUrl = import.meta.env.VITE_SITE_URL || '';
+const siteUrl = import.meta.env.VITE_SITE_URL || 'https://lakshmioraldental.in';
 
 const personSchema = {
   '@context': 'https://schema.org',
