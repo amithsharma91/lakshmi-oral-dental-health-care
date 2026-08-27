@@ -13,19 +13,19 @@ interface VideoPatient {
 const VIDEO_PATIENTS: Omit<VideoPatient, 'orientation'>[] = [
   {
     id: 1,
-    name: 'Savitha R.',
+    name: '',
     treatment: 'Dental Implants',
     quote: 'Dr. Yogesh changed my smile completely!',
     fullReview:
-      'I had been struggling with missing teeth for years and was very hesitant about implants. But Dr. Yogesh made the entire process so smooth and painless. The results are beyond what I expected — my confidence is back and I can eat everything normally again. Truly the best clinic in Bangalore.',
+      'I had been struggling with missing teeth for years and was very hesitant about implants. But Dr. Yogesh made the entire process so smooth and painless. The results are beyond what I expected \u2014 my confidence is back and I can eat everything normally again. Truly the best clinic in Bangalore.',
     videoUrl:
       'https://storage.readdy-site.link/project_files/c4893f46-78a8-468c-a94c-da841665c127/a10efacf-a571-484f-8810-fcf2fe05816b_WA_1774388319112.mp4?v=d63987f84adbcdb15add1b79fdfc2feb',
   },
   {
     id: 2,
-    name: 'Ramesh K.',
+    name: '',
     treatment: 'Root Canal Treatment',
-    quote: 'Completely painless — I can\'t believe how easy it was',
+    quote: 'Completely painless \u2014 I can\'t believe how easy it was',
     fullReview:
       'I was absolutely terrified of root canal treatment. I had delayed it for almost a year. But the team at Lakshmi Dental was so professional and caring. Dr. Yogesh explained every step and I felt zero pain throughout. The relief after was incredible. Highly recommend to anyone who is scared like I was.',
     videoUrl:
@@ -33,7 +33,7 @@ const VIDEO_PATIENTS: Omit<VideoPatient, 'orientation'>[] = [
   },
   {
     id: 3,
-    name: 'Anitha M.',
+    name: '',
     treatment: 'Teeth Whitening',
     quote: 'My smile has never looked this good in my life',
     fullReview:
@@ -43,23 +43,53 @@ const VIDEO_PATIENTS: Omit<VideoPatient, 'orientation'>[] = [
   },
   {
     id: 4,
-    name: 'Suresh B.',
+    name: '',
     treatment: 'Full Mouth Restoration',
-    quote: 'Life changing experience — 24 years of expertise shows',
+    quote: 'Life changing experience \u2014 24 years of expertise shows',
     fullReview:
-      'After neglecting my teeth for many years I finally decided to do a full restoration. Dr. Yogesh\'s 24 years of experience truly shows — the planning was meticulous, the execution was perfect. I have a complete new set of teeth now and people cannot believe the transformation. Worth every rupee.',
+      'After neglecting my teeth for many years I finally decided to do a full restoration. Dr. Yogesh\'s 24 years of experience truly shows \u2014 the planning was meticulous, the execution was perfect. I have a complete new set of teeth now and people cannot believe the transformation. Worth every rupee.',
     videoUrl:
       'https://storage.readdy-site.link/project_files/c4893f46-78a8-468c-a94c-da841665c127/8ff981cf-ec16-43e8-b825-257cb83a5bc1_VID-20260324-WA0030.mp4?v=036ad87f3066e6f362732724bab5ed13',
   },
   {
     id: 5,
-    name: 'Preethi N.',
+    name: '',
     treatment: 'Orthodontics & Braces',
     quote: 'Best decision I made for my daughter\'s smile',
     fullReview:
-      'We brought our daughter here for braces and the experience was wonderful from start to finish. Dr. Yogesh was patient and kind with her — she was so nervous initially. The treatment was on schedule and the results are absolutely beautiful. Her smile has transformed her confidence completely. Thank you Lakshmi Dental!',
+      'We brought our daughter here for braces and the experience was wonderful from start to finish. Dr. Yogesh was patient and kind with her \u2014 she was so nervous initially. The treatment was on schedule and the results are absolutely beautiful. Her smile has transformed her confidence completely. Thank you Lakshmi Dental!',
     videoUrl:
       'https://storage.readdy-site.link/project_files/c4893f46-78a8-468c-a94c-da841665c127/4be71ef7-468d-4b59-a6ec-20044f0225f0_VID-20260321-WA0003.mp4?v=a30d1c49cb8d620128b7ee780aa9a3d1',
+  },
+  {
+    id: 6,
+    name: '',
+    treatment: 'Dental Implants',
+    quote: 'I finally got my smile back after years of struggle',
+    fullReview:
+      'I had been putting off dental treatment for years due to fear. Dr. Yogesh made the entire implant process so comfortable. The results are incredible \u2014 my new teeth look and feel completely natural. I wish I had done this sooner. The clinic is spotless and the staff is incredibly warm.',
+    videoUrl:
+      'https://storage.helloreaddy.io/project_files/c4893f46-78a8-468c-a94c-da841665c127/c09a3765-9c76-4ac8-96da-91781fb5d9ac_VID-20260826-WA0002.mp4',
+  },
+  {
+    id: 7,
+    name: '',
+    treatment: 'Root Canal Treatment',
+    quote: 'Zero pain and amazing care from start to finish',
+    fullReview:
+      'I came in with severe tooth pain and was terrified of the treatment. Dr. Yogesh explained everything step by step and performed the root canal with such precision. I genuinely felt no pain at all. The clinic is warm, the staff is kind, and the treatment is world-class.',
+    videoUrl:
+      'https://storage.helloreaddy.io/project_files/c4893f46-78a8-468c-a94c-da841665c127/9038e8c0-81f6-45fa-b49d-c8b035652963_VID-20260826-WA0001.mp4',
+  },
+  {
+    id: 8,
+    name: '',
+    treatment: 'Cosmetic Dentistry',
+    quote: 'My smile is brighter and more confident than ever',
+    fullReview:
+      'I had always been self-conscious about my smile. After visiting Lakshmi Dental, I finally feel confident. The cosmetic treatment was painless, professional, and the results are stunning. Dr. Yogesh truly understands what patients want and delivers beyond expectations.',
+    videoUrl:
+      'https://storage.helloreaddy.io/project_files/c4893f46-78a8-468c-a94c-da841665c127/af22cc69-0999-40d3-9640-98cfacf429d6_VID-20260826-WA0000.mp4',
   },
 ];
 
@@ -80,6 +110,8 @@ interface ModalProps {
 
 function VideoModal({ patient, onClose }: ModalProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [naturalWidth, setNaturalWidth] = useState(0);
+  const [naturalHeight, setNaturalHeight] = useState(0);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -107,7 +139,23 @@ function VideoModal({ patient, onClose }: ModalProps) {
     onClose();
   }, [onClose]);
 
+  const handleLoadedMetadata = useCallback(() => {
+    const v = videoRef.current;
+    if (v) {
+      setNaturalWidth(v.videoWidth);
+      setNaturalHeight(v.videoHeight);
+    }
+  }, []);
+
   const isPortrait = patient.orientation === 'portrait';
+
+  // Compute modal dimensions to fit the video at its natural size within viewport
+  const maxWidth = Math.min(naturalWidth || 900, window.innerWidth * 0.95);
+  const maxHeight = Math.min(naturalHeight || 600, window.innerHeight * 0.85);
+
+  const isMobile = window.innerWidth < 768;
+  const modalWidth = isPortrait && isMobile ? 'min(360px, 90vw)' : `${maxWidth}px`;
+  const modalMaxHeight = isPortrait && isMobile ? '85vh' : `${maxHeight}px`;
 
   return (
     <div
@@ -118,8 +166,8 @@ function VideoModal({ patient, onClose }: ModalProps) {
       }}
     >
       <div
-        className="relative mx-auto"
-        style={{ width: isPortrait ? 'min(360px, 90vw)' : 'min(900px, 95vw)' }}
+        className="relative mx-auto flex flex-col"
+        style={{ width: modalWidth, maxHeight: modalMaxHeight }}
       >
         {/* Close Button */}
         <button
@@ -132,23 +180,24 @@ function VideoModal({ patient, onClose }: ModalProps) {
         </button>
 
         {/* Video Player */}
-        <div
-          className="w-full rounded-xl overflow-hidden bg-black"
-          style={{ aspectRatio: isPortrait ? '9/16' : '16/9' }}
-        >
+        <div className="w-full rounded-xl overflow-hidden bg-black flex items-center justify-center" style={{ maxHeight: modalMaxHeight }}>
           <video
             ref={videoRef}
             src={patient.videoUrl}
             controls
             playsInline
-            className="w-full h-full object-contain"
+            className="w-full h-auto"
+            style={{ maxHeight: modalMaxHeight, objectFit: 'contain' }}
+            onLoadedMetadata={handleLoadedMetadata}
           />
         </div>
 
-        {/* Patient Info Below Video */}
+        {/* Info Below Video */}
         <div className="mt-4 flex flex-col gap-2">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="font-bold text-white text-base font-heading">{patient.name}</span>
+            {patient.name && (
+              <span className="font-bold text-white text-base font-heading">{patient.name}</span>
+            )}
             <span
               className="text-white text-xs font-semibold px-3 py-1 rounded-full"
               style={{ background: '#F4A300' }}
@@ -187,7 +236,7 @@ function VideoCard({ patient, onPlay, onOrientationDetected }: VideoCardProps) {
   }, [patient.id, onOrientationDetected]);
 
   const thumbnailAspect = isPortrait ? '9/16' : '16/9';
-  const thumbnailHeight = isPortrait ? '320px' : '200px';
+  const thumbnailHeight = isPortrait ? '380px' : '220px';
 
   return (
     <div
@@ -222,9 +271,10 @@ function VideoCard({ patient, onPlay, onOrientationDetected }: VideoCardProps) {
       <div
         className="relative overflow-hidden bg-black flex items-center justify-center"
         style={{
-          height: thumbnailHeight,
           aspectRatio: isUnknown ? '16/9' : thumbnailAspect,
-          maxHeight: isPortrait ? '340px' : '220px',
+          height: isPortrait ? thumbnailHeight : undefined,
+          maxHeight: isPortrait ? '400px' : '240px',
+          minHeight: '180px',
         }}
       >
         <video
@@ -233,7 +283,7 @@ function VideoCard({ patient, onPlay, onOrientationDetected }: VideoCardProps) {
           muted
           playsInline
           className="w-full h-full"
-          style={{ objectFit: isPortrait ? 'cover' : 'cover', pointerEvents: 'none' }}
+          style={{ objectFit: 'contain', pointerEvents: 'none' }}
           onLoadedMetadata={(e) => {
             const v = e.currentTarget;
             if (v.videoWidth && v.videoHeight) {
@@ -276,9 +326,11 @@ function VideoCard({ patient, onPlay, onOrientationDetected }: VideoCardProps) {
       {/* Patient Details */}
       <div className="p-5 flex-1 flex flex-col">
         <div className="flex items-center justify-between mb-2 gap-2">
-          <p className="font-heading font-bold text-[#1A1A1A] text-base leading-tight">{patient.name}</p>
+          {patient.name && (
+            <p className="font-heading font-bold text-[#1A1A1A] text-base leading-tight">{patient.name}</p>
+          )}
           <span
-            className="text-white text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0"
+            className={`text-white text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0 ${patient.name ? '' : ''}`}
             style={{ background: '#F4A300' }}
           >
             {patient.treatment}
@@ -354,25 +406,25 @@ export default function VideoTestimonials() {
             Watch Their <span style={{ color: '#F4A300' }}>Smile Journeys</span>
           </h2>
           <p className="text-gray-500 font-body text-base max-w-xl mx-auto">
-            Hear directly from our patients about their experience at Lakshmi Dental — in their own words.
+            Hear directly from our patients about their experience at Lakshmi Dental \u2014 in their own words.
           </p>
         </div>
 
-        {/* Videos Grid — portrait videos in narrower columns, landscape in wider */}
+        {/* Videos Grid \u2014 portrait videos in narrower columns, landscape in wider */}
         {unknownPatients.length > 0 && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             {unknownPatients.map(renderCard)}
           </div>
         )}
 
-        {/* Landscape videos — 2 per row (wider) */}
+        {/* Landscape videos \u2014 2 per row (wider) */}
         {landscapePatients.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {landscapePatients.map(renderCard)}
           </div>
         )}
 
-        {/* Portrait videos — 3-4 per row (narrower cards) */}
+        {/* Portrait videos \u2014 3-4 per row (narrower cards) */}
         {portraitPatients.length > 0 && (
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
             {portraitPatients.map(renderCard)}
